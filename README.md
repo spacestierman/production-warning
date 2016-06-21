@@ -11,3 +11,4 @@ A Windows Service that has an HTTP listener.  It listens for /start and /stop.  
 # Notes
 - If you installed the Windows Service project using the projects' build folder *and* the service is still running, Visual Studio will be unable to overwrite the files because they're in use by the service.  Stop the service and re-build.
 - App.config controls most of the variables.
+- The service must run as an administrator account. If you use your personal credentials, make sure that you update the service credentials whenever you change your password.
